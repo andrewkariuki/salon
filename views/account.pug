@@ -1,0 +1,16 @@
+extends ./layout/layout
+
+block content
+    section.module.search-listing.d-xs-none.d-sm-block
+        .loading
+        .container
+            .row
+                .col-6.m-0-auto
+                    h1.gamma.search-results-title Account
+                    p.zeta.search-result-text You can change your account
+            .row.search-list-items.mt-1
+                .col-12
+                    .w-100.d-flex.justify-content-center
+                        .main-forms
+                            include ./forms/userinfo
+                            include ./forms/accountnewpassword

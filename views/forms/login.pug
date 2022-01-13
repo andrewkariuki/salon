@@ -1,0 +1,18 @@
+if error
+    .alert.alert-danger Invalid username or password
+form(method='post' action="/login")
+    fieldset
+        .form-row
+            .col
+                .form-group
+                    input#email.form-control(type='email' name='email' maxlength='250')
+                    label.control-label Email Address
+        .form-row.mb-3
+            .col
+                .form-group
+                    input#password.form-control(type='password' name='password' maxlength='100')
+                    label.control-label Password
+        .text-center
+            button.btn.btn-lg.btn-primary(type='submit') Sign in
+        .text-center.mt-1
+            a.btn.btn-link.btn-link-primary(href='/forgot-password') Forgot password

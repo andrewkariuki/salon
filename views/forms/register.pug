@@ -1,0 +1,25 @@
+if error
+    .alert.alert-danger Invalid username or password
+form(method='post' action="/register")
+    fieldset
+        .form-row
+            .col
+                .form-group
+                    input#firstName.form-control(type='text' name='firstName' maxlength='250')
+                    label.control-label First Name
+            .col
+                .form-group
+                    input#lastName.form-control(type='text' name='lastName' maxlength='250')
+                    label.control-label Last name
+        .form-row
+            .col
+                .form-group
+                    input#email.form-control(type='email' name='email' maxlength='250')
+                    label.control-label Email address
+        .form-row.mb-3
+            .col
+                .form-group
+                    input#password.form-control(type='password' name='password' maxLength='100')
+                    label.control-label Password
+        .text-center
+            button.btn.btn-lg.btn-primary(type='submit') Sign up

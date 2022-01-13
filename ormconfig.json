@@ -1,0 +1,24 @@
+{
+   "type": "postgres",
+   "host": "localhost",
+   "port": 5432,
+   "username": "postgres",
+   "password": "1234",
+   "database": "salon",
+   "synchronize": true,
+   "logging": false,
+   "entities": [
+      "./source/entity/**/*.ts"
+   ],
+   "migrations": [
+      "./source/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "./source/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "./source/entity",
+      "migrationsDir": "./source/migration",
+      "subscribersDir": "./source/subscriber"
+   }
+}

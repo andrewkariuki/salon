@@ -1,0 +1,15 @@
+extends ./layout/layout
+
+block content
+    section.module.search-listing.d-xs-none.d-sm-block
+        .loading
+        .container
+            .row
+                .col-12
+                    if salons.length > 0
+                        h1.gamma.search-results-title Salons to pick from
+                        p.zeta.search-result-text #{salons.length} Total Results
+                    else
+                        h1.gamma.search-results-title No Salons to pick from
+            .row.search-list-items.mt-1
+                include ./salons/single

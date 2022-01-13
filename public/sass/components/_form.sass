@@ -1,0 +1,62 @@
+fieldset
+    min-width: 0
+    padding: 0
+    margin: 0
+    border: 0
+
+.form-row
+    display: flex
+    flex-wrap: wrap
+    margin-right: -5px
+    margin-left: -5px
+
+    .form-group
+        position: relative
+        margin: -1px
+
+.form-row
+    margin: 1px 0
+
+.form-control
+    position: relative
+    padding-top: 2.2rem
+    background-clip: border-box
+    font-size: 1rem
+    -webkit-appearance: none
+    border-radius: 0
+
+    &:focus
+        color: #495057
+        background-color: #fff
+        outline: 0
+        border: 1px solid #c8c9c7
+        border-bottom: 3px solid #020202
+        z-index: 1
+        box-shadow: none
+
+.control-label
+    position: absolute
+    top: 1.0315rem
+    left: 1.0315rem
+    margin-bottom: 0
+    z-index: 1
+    color: #75787b
+    font-size: 1rem
+    pointer-events: none
+    transition: all .25s ease-in-out
+
+    @media (max-width: 1199.98px)
+        top: 1.3rem
+        font-size: .7rem
+
+.control-label-md
+    top: pxtorem(19px)
+    left: 1.0315rem
+    font-size: 1rem
+
+.form-control.has-value~.control-label, .form-control:focus~.control-label
+    top: 0.5rem
+    font-size: .75rem
+
+    @media (max-width: 991.98px)
+        top: 0.6rem!important

@@ -1,0 +1,13 @@
+extends ./layout/layout
+
+block content
+    section.module.search-listing.d-xs-none.d-sm-block
+        .loading
+        .container
+            .row
+                .col-12
+                    h1.gamma.search-results-title Your bookings
+                    p.zeta.search-result-text Total active bookings
+            .row.search-list-items.mt-1
+                .col-12
+                    include ./booking/bookings

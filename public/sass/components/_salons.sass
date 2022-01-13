@@ -1,0 +1,271 @@
+.module.search-listing
+    padding: 30px 0 60px
+    width: 100%
+    margin: 0 auto
+    position: relative
+
+    @media (min-width: 576px)
+        padding: 30px 15px
+        width: 60%
+
+    .loading
+        position: fixed
+        // left: 0
+        top: 3rem
+        width: 100%
+        margin: 0 auto
+        height: calc(100% - 78px)
+        z-index: 100
+        background-color: hsla(0,0%,100%,.7)
+        opacity: 0
+        transition: all .4s cubic-bezier(.19,1,.22,1)
+        pointer-events: none
+
+    .search-results-title
+        margin-bottom: 10px
+
+.gamma
+    margin: 0
+    font-size: 20.155392px
+
+    @media (min-width: 768px) and (max-width: 1200px)
+        font-size: calc(23.69688px - .0763vw)
+.zeta
+    margin: 0
+    font-size: 14.8148148148px
+
+    @media (min-width: 768px) and (max-width: 1200px)
+        font-size: calc(14.0335px + .01573vw)
+
+.listing-item
+    position: relative
+    margin-bottom: 30px
+
+    &>a:first-child
+        display: block
+        width: 100%
+        height: 100%
+        position: relative
+        background-color: #f2f2f2
+
+    .img-wrapper
+        position: relative
+        width: 100%
+        height: 100%
+        overflow: hidden
+        display: block
+
+        &:before
+            display: block
+            content: " "
+            width: 100%
+            padding-top: 56.25%
+
+    .image
+        position: absolute
+        inset: 0
+        height: 100%
+        object-fit: cover
+        background-size: cover
+        background-repeat: no-repeat
+        z-index: 1
+        background-color: #f2f2f2
+        transition: all .4s cubic-bezier(.19,1,.22,1),transform .4s ease-in-out
+        transform-origin: center
+
+    .text
+        min-height: 138px
+        padding: 15px 20px
+        color: grey
+        border: 1px solid #ccc
+        border-top: 0
+        font-size: 12px
+        border-bottom-left-radius: 4px
+        border-bottom-right-radius: 4px
+
+        .address, .bed-bath
+            letter-spacing: -.12px
+            line-height: 18px
+
+        .address
+            margin-bottom: 10px
+
+    .price
+        font-size: 18px
+        font-weight: 600
+        color: #020202
+        letter-spacing: -.23px
+        line-height: 24px
+        margin-bottom: 0
+        padding-bottom: 10px
+
+img[data-sizes=auto]
+    display: block
+    width: 100%
+
+.lazyloaded
+    transition: all .4s cubic-bezier(.19,1,.22,1)
+    opacity: 1
+
+.breadcrumb
+    list-style: none
+    padding: 0
+    margin: 0
+    font-size: 16px
+    line-height: 38px
+
+    li
+        float: left
+        margin-right: 20px
+        color: #5f9298
+
+        a
+            color: #5f9298
+            font-weight: bold
+
+        i
+            margin-right: 10px
+            font-size: 14px
+
+        span
+            margin-right: 10px
+            font-size: 14px
+
+        .active
+            color: #020202
+
+        .divider
+            margin-left: 0
+            margin-right: 17px
+            color: #b3b4b4
+.gallery
+    .flex
+        display: flex
+        box-sizing: border-box
+
+    .hero-one
+        position: relative
+
+        &:before
+            display: block
+            content: " "
+            width: 100%
+            padding-top: 50%
+        &>.content
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+
+    .element-1-1
+        flex: 1 77%
+        position: relative
+
+        &:before
+            display: block
+            content: " "
+            width: 100%
+            padding-top: 62.5%
+
+        &>.content
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+
+    .element
+        min-width: 100px
+
+    .content
+        flex: 1 100%
+
+    .content
+        position: relative
+        background-color: #ccc
+        margin: 2px
+
+    .no-image
+        height: 100%
+        background-color: #eff4f5
+        background-image: url(no-image.7ef30a51.svg)
+        background-position: 50%
+        background-size: 120px 113px
+        background-repeat: no-repeat
+
+.hero .address-line-1, .hero .price
+    letter-spacing: -.8px
+
+.beta
+    margin: 0
+    font-size: 21.76782336px
+
+    @media (min-width: 1200px)
+        font-size: 25.62890625px
+
+.hero .address-line-2, .hero .status
+    letter-spacing: -.34px
+
+.gamma
+    margin: 0
+    font-size: 20.155392px
+
+    @media (min-width: 1200px)
+        font-size: 22.78125px
+
+.hero .features
+    color: #9a9a9a
+    margin-top: 15px
+    display: block
+
+.epsilon
+    margin: 0
+    font-size: 16px
+    @media (min-width: 1200px)
+        font-size: 16px
+
+.color-success
+    color: #01a47b
+
+.hero .status
+    letter-spacing: -.34px
+
+.hero .status
+    float: right
+
+.hero .btn-wrapper
+    display: flex
+    justify-content: flex-end
+
+.hero .btn-wrapper a:first-child, .hero .btn-wrapper input:first-child
+    margin-right: 10px
+
+.btn-wrapper a, .btn-wrapper button,.btn-wrapper input
+    width: calc(50% - 5px)
+
+input.btn.btn-large.modal-cta
+    font-size: 13px
+    padding-left: 0
+    padding-right: 0
+    font-family: "Poppins",sans-serif
+    font-weight: bold
+
+.btn.btn-large
+    // padding: 13.5px 10px
+// .btn
+//     font-weight: bold
+//     font-size: 14px
+//     padding: 8px 10px
+//     display: inline-block
+//     float: left
+//     border-radius: 4px
+//     text-decoration: none
+//     text-align: center
+//     margin-bottom: 0
+//     line-height: 1.5
+//     border: 2px solid #da291c
+
+//     @media (min-width: 992px)
+//         padding: 5px 10px
+//         font-size: 16px

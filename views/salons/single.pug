@@ -1,0 +1,17 @@
+each salon in salons ? salons : ['There are no salons']
+    .col-12.col-lg-6
+        .listing-item(data-liked='false' data-id='5902121')
+            a(href="/salon/"+salon.id+"" aria-label=""+salon.name+"")
+                .img-wrapper
+                    img.image.lazyautosizes.ls-is-cached.lazyloaded(data-src=""+salon.pictureUrl+"" data-sizes='auto' alt=""+salon.name+"" onerror='' sizes='278px' src=""+salon.pictureUrl+"")
+            a(href="/salon/"+salon.id+"" aria-label=""+salon.name+"")
+                .text
+                    h3.price Ksh.#{salon.price}
+                    .address #{salon.name} - #{salon.city}
+                    .bed-bath
+                        | #{salon.category} • #{salon.description}
+                        br
+                        if salon.availability > 0
+                            | Available for booking
+                        else
+                            | Fully booked

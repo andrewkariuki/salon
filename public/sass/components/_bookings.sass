@@ -1,0 +1,39 @@
+.module.quick-apply-bar
+    // position: fixed!important
+    // bottom: 0
+    width: 100%
+    padding: 0!important
+    z-index: 5
+    transition: all .4s cubic-bezier(.19,1,.22,1)
+    opacity: 1
+    pointer-events: auto
+    margin-bottom: 10px
+
+.module.quick-apply-bar .wrapper-container
+    padding: 0
+
+    @media (min-width: 768px)
+        padding: auto
+
+module.quick-apply-bar .wrapper-container .row
+        display: flex
+        align-items: center
+
+.module.quick-apply-bar .wrapper
+    box-shadow: 0 -2px 4px #000000
+    background: #fff
+    padding: 20px 20px 30px
+    @media (min-width: 768px)
+        padding: 17px 15px
+        border-radius: 4px
+        box-shadow: 0 0 4px #000000
+
+.module.quick-apply-bar .first-half
+    @media (min-width: 768px)
+        border-right: 1px solid #ccc
+
+.module.quick-apply-bar .text-wrapper
+    line-height: 44px
+
+.module.quick-apply-bar .status
+    float: right

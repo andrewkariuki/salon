@@ -1,0 +1,41 @@
+if error
+    .alert.alert-danger Invalid username or password
+form(method='post' action="/list-salon" )
+    fieldset
+        .form-row.mb-2
+            .col
+                .form-group
+                    input#name.form-control(type='text' name='name' maxlength='250')
+                    label.control-label Salon's Name
+        .form-row.mb-2
+            .col
+                .form-group
+                    input#category.form-control(type='text' name='category' maxlength='250')
+                    label.control-label Salon's category
+        .form-row.mb-2
+            .col
+                .form-group
+                    input#picture.form-control(type='file' name='picture')
+                    label.control-label Salon's picture
+        .form-row.mb-2
+            .col
+                .form-group
+                    textarea#description.form-control(type='text' name='description')
+                    label.control-label Salon's Description
+        .form-row.mb-2
+            .col
+                .form-group
+                    input#slots.form-control(type='number' name='slots')
+                    label.control-label Salon's slots / Occupancy
+        .form-row.mb-2
+            .col
+                .form-group
+                    input#slots.form-control(type='number' name='price')
+                    label.control-label Salon's Average cost
+        .form-row.mb-3
+            .col
+                .form-group
+                    input#city.form-control(type='text' name='city' maxlength='100')
+                    label.control-label Town/City
+        .text-center
+            button.btn.btn-lg.btn-primary(type='submit') Submit

@@ -1,0 +1,13 @@
+.cta-wrapper
+    if user
+        a(href="/account/"+user.id+"").sign-in-cta #{user.firstName} #{user.lastName}
+        a(href="/logout").btn.btn-primary.signup-button Sign out
+    else
+        a(href="/login").sign-in-cta Sign in
+        a(href="/register").btn.btn-primary.signup-button Sign up
+    a(href="#")
+    a#open-menu.burger
+        .b-menu
+            .b-bun.b-bun--top
+            .b-bun.b-bun--mid
+            .b-bun.b-bun--bottom

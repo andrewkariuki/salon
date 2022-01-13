@@ -1,0 +1,20 @@
+if error
+    .alert.alert-danger Invalid inputs
+form(method='post' action="/update-account")
+    fieldset
+        .form-row
+            .col
+                .form-group
+                    input#firstName.form-control(type='text' name='firstName' maxlength='250' value=""+user.firstName+"")
+                    label.control-label First Name
+            .col
+                .form-group
+                    input#lastName.form-control(type='text' name='lastName' maxlength='250' value=""+user.lastName+"")
+                    label.control-label Last name
+        .form-row.mb-3
+            .col
+                .form-group
+                    input#email.form-control(type='email' name='email' maxlength='250' value=""+user.email+"")
+                    label.control-label Email address
+        .text-center.mb-5
+            button.btn.btn-lg.btn-primary(type='submit') Update

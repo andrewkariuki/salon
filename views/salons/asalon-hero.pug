@@ -1,0 +1,34 @@
+html
+    body
+        section.module.hero.py-0
+            .container
+                .row.mb-3
+                    .col-12.gallery-wrapper
+                        .gallery
+                            .container.card
+                                .flex.row.structure
+                                    .flex.element.element-1-1.hero-one
+                                        .content
+                                            .no-image
+                #request-to-apply-bar.row
+                    .col-12.col-md-6.col-lg-7
+                        h4.address-line-1.beta #{salon.name}
+                        p.address-line-2.gamma #{salon.city}
+                        span.features.epsilon
+                            | #{salon.category} • #{salon.description}
+                    .col-4.col-md-6.col-lg-5.d-none.d-sm-none.d-md-block
+                        .row.mb-1
+                            .col
+                                h4.price.beta Ksh.#{salon.price}
+                            .col
+                                if salon.availability > 0
+                                    span.status.epsilon.color-success Available Now
+                        .row
+                            .col
+                                form.btn-wrapper(action="/book/"+salon.id+"" method="post")
+                                    input#datepicker.btn.btn-large.modal-cta(name="date")
+                                    button.btn.btn-large.btn-primary.modal-cta(
+                                        type="submit"
+                                        data-modal-authorize='' data-modal-title='Book') Book
+                                    //- a.btn.btn-large.modal-cta(href="/cancel/"+salon.id+"" data-modal='message-modal' data-modal-authorize='' data-modal-title='Cancel' data-modal-state='Cancel') Cancel
+                                    //- a.btn.btn-large.btn-primary.modal-cta(href="/book/"+salon.id+"" data-modal='message-modal' data-modal-authorize='' data-modal-title='Book') Book

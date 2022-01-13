@@ -1,0 +1,16 @@
+nav
+    ul
+        if user
+            li
+                a(href='/salons') Search Salons
+            li
+                a(href='/appointments') Salon Bookings
+            li
+                a(href='/list-salon') List your salon
+            li
+                a(href='/bookings') My Booking
+            li
+                a(href='/my-salons') My Salons
+        else
+            li
+                a(href='/salons') Search Salons

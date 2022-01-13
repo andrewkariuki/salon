@@ -1,0 +1,14 @@
+.auth
+      a(href="/").back-nav
+        i.fas.fa-chevron-left
+        | Back &nbsp;
+        span.btn.btn-link.btn-link-primary home
+      .main.d-flex.flex-md-row.flex-column.justify-content-between.align-items-center
+        .w-100.d-flex.justify-content-center
+          .main-forms
+            .d-flex.justify-content-center
+              h1 Strands
+            if login
+              h3.text-center.my-3 Please Sign in
+            else
+              h3.text-center.my-3 Join for free

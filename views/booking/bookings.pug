@@ -1,0 +1,32 @@
+each booking in bookings ? bookings : ['There are no bookings']
+    section.module.quick-apply-bar.is-active
+        .container
+        .row
+            .col-12.wrapper-container
+                .wrapper
+                    .row
+                        .col-12.col-md-5.col-xl-6.first-half
+                            .row
+                                .col-sm-12.col-lg-6
+                                    .text-wrapper
+                                    h4.price.gamma.d-inline ksh.#{booking.salon.price}
+                                    p.address-line-2.epsilon.d-lg-block #{booking.salon.name}
+                                    span.status.epsilon.color-success.d-lg-none #{booking.date}
+                                .col-sm-6.d-lg-block
+                                    .btn-wrapper.actionable-buttons.d-none.d-lg-block
+                                        //- a.btn.btn-secondary.btn-favorite(href='#' data-listing-id='5989584' data-is-favorite='false')
+                                        //-     span.icon-heart-outline
+                                        //-     span.icon-heart-fill
+                                        //- a.btn.btn-secondary.modal-cta(href='#' data-modal='social-share-modal')
+                                        //-     span.icon-share
+                        .col-12.col-md-7.col-xl-6
+                            .row
+                            .col-sm-4.d-lg-block
+                                .contact-wrapper
+                                p.name #{booking.user.firstName} #{booking.user.lastName}
+                                //- .phone
+                                //-     a.link-bold(href='tel:+14352925821') (435) 292-5821
+                            .col-12.col-lg-8
+                                .btn-wrapper.actionable-buttons
+                                    //- a.apply-btn.btn.modal-cta(href='#' data-modal='custom-apply-modal') Apply Now
+                                    a.btn.btn-primary.modal-cta(href='#' data-modal='message-modal' data-modal-authorize='' data-modal-title='Request a Tour') Cancel

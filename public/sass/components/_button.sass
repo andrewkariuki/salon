@@ -1,0 +1,58 @@
+.btn:hover
+    color: #020202
+    text-decoration: none
+
+.btn-primary
+    color: #fff
+    background-color: #da291c
+    border-color: #da291c
+    box-shadow: none
+
+.btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle
+    background-color: #da291c
+    border-color: #da291c
+
+.btn-primary:hover
+    color: #fff
+
+.btn:not(.btn-lg):not(.btn-xl)
+    padding-bottom: 0.375rem
+    letter-spacing: -.014rem
+
+.btn-link
+    padding-right: 0
+    padding-left: 0
+    font-size: 1rem
+    font-weight: 700
+    border-radius: 0
+    position: relative
+
+.btn-link-primary
+    &:hover
+        &:before
+            height: 4px
+            margin-bottom: -2px
+
+    &:before
+        content: ""
+        position: absolute
+        width: 100%
+        height: 2px
+        bottom: 4px
+        left: 0
+        display: block
+        background-color: #da291c
+        -webkit-transition: all .3s ease-in-out 0s
+        transition: all .3s ease-in-out 0s
+
+.btn-link, .btn-link:hover
+    color: inherit
+    text-decoration: none
+
+.btn-link.focus, .btn-link:focus
+    text-decoration: none
+    box-shadow: none
+
+.btn-outline-primary:active, .btn-outline-primary:hover, .btn-white
+    color: #da291c
+    background-color: #fff
